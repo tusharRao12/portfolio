@@ -380,7 +380,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "created by me";
+    content: "that i worked on";
 }
 .teams .carousel .card{
     background: #222;
@@ -389,6 +389,8 @@ section .title::after{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    cursor: pointer;
+    height: 60vh;
 }
 .teams .carousel .card:hover{
     background: crimson;
@@ -402,6 +404,10 @@ section .title::after{
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
+}
+.teams .carousel .card .box p a{
+    color: white;
+    text-decoration: underline;
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -678,3 +684,4 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+

@@ -13,6 +13,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("HYu1hpR-n6LeSBPDd"); 
+       })();
+    </script>
 
 </head>
 <body>
@@ -21,7 +27,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Tushar<span>Arya.</span></a></div>
+            <div class="logo"><a href="#">Tushar<span>Yadav</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -41,7 +47,7 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Tushar Arya</div>
+                <div class="text-2">Tushar Yadav</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <!-- <a href="#">Hire me</a> -->
             </div>
@@ -73,23 +79,23 @@
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Ui Design</div>
-                        <p>Make web design using adobe photoshop and figma</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>I will advertise products using websites or social media.</p>
+                        <i class="fas fa-code"></i>
+                        <div class="text">Ui Development</div>
+                        <p>Devlop Ui from a xd or figma desing using HTML,CSS,Js and React</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">Web Development</div>
-                        <p>I can develop a website by applying html,css and js</p>
+                        <div class="text">Backend Development</div>
+                        <p>Develop backend of websites using Php and its formworks like Wordpress and Laravels</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Website Hosting</div>
+                        <p>I will advertise products using websites or social media.</p>
                     </div>
                 </div>
                </div>
@@ -105,8 +111,6 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>My skiils are - Html,Css, Javascript, React and Bootstrap.
-                        I learn these things and try to become expert in these then i will go to another things. </p>
                  
                 </div>
                 <div class="column right">
@@ -122,28 +126,49 @@
                             <span>CSS</span>
                             <span>70%</span>
                         </div>
-                        <div class="line css"></div>
+                        <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>Javascript</span>
                             <span>50%</span>
                         </div>
-                        <div class="line js"></div>
+                        <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>Bootstrap</span>
                             <span>70%</span>
                         </div>
-                        <div class="line php"></div>
+                        <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>React</span>
                             <span>30%</span>
                         </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Php</span>
+                            <span>60%</span>
+                        </div>
                         <div class="line mysql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Laravel</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Wordpress</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="line php"></div>
                     </div>
                
        
@@ -160,23 +185,32 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <!-- <img src="images/profile-1.jpeg" alt=""> -->
-                        <div class="text">Internationalization</div>
-                        <p>Work on industry level project internationalization where we have to change the language of each component seperataly.For front-end we use angular and for backend we use Flask and Mysql database.</p>
+                        <img src="projects/1550238107110.webp" alt="">
+                        <div class="text">Moneyboxx Finance</div>
+                        <p>Make the complete backend of this website with fully functional CMS using Laravel.This website have many functionlity that i integrated using php. Visit website - <a href="https://www.moneyboxxfinance.com/" target="_blank">Moneyboxx Finance</a></p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <!-- <img src="images/profile-2.jpeg" alt=""> -->
-                        <div class="text">Resume Builder</div>
-                        <p>Amazing resume builder webpage using HTML,CSS,JavaScript where first we have to fill all the information and when we click generate our resume generated.</p>
+                        <img src="projects/120334344.png" alt="">
+                        <div class="text">HCG Oncology</div>
+                        <p>In this project i devlop multiple inside pages, also works on the backend like structuring tables,data migration and other backend functionlity. Visit website - <a href="https://www.hcgoncology.com/" target="_blank">HCG Oncology</a></p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <!-- <img src="images/profile-3.jpeg" alt=""> -->
-                        <div class="text">React Modern Ui</div>
-                        <p>React modern website from figma design.</p>
+                        <img src="projects/353463453443.png" alt="">
+                        <div class="text">Perf Safety</div>
+                        <p>In this project i make a cms for products also bulk uploads for the products using Laravel, and get the product in website using php, also added pagination and multiple filters.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="projects/1021111111.jpg" alt="">
+                        <div class="text">Laravel Web Application</div>
+                        <p>I have made a laravel web application, in this i have added multiple functionalities that we can use -
+                        Adding Task, Assign Task, MarkIn-MarkOut, Apply Leave, and many other simple operations.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -191,7 +225,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>If you want to talk to me then you will mail me on the given Emial that i provided below. </p>
+                    <p>If you want to talk to me then you will mail me on the given Email that i provided below. </p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -218,20 +252,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form id="contact-form">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" id="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" id="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea id="message" cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>

@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Ui Developer", "Ui Designer"],
+        strings: ["Ui Developer", "Backend Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Ui Developer","Ui Designer"],
+        strings: ["Ui Developer","Backend Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -71,3 +71,36 @@ $(document).ready(function(){
         }
     });
 });
+
+// FOrm
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    sendEmail();
+ });
+ document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    sendEmail();
+ });
+
+ function sendEmail() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    const templateParams = {
+       from_name: name,
+       from_email: email,
+       subject: subject,
+       message: message
+    };
+
+    emailjs.send('service_ulzyiy1', 'template_cwye3wc', templateParams)
+       .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Message sent successfully!');
+       }, function(error) {
+          console.log('FAILED...', error);
+          alert('Message failed to send.');
+       });
+ }
